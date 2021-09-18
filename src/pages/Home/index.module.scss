@@ -1,0 +1,225 @@
+$default-radius: 0.8rem;
+$primary-color: #51516A;
+$secondary-color: #9a9ba7;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: #fff;
+  padding: 1.3em 0;
+  margin-bottom: 3em;
+
+  &__right {
+    &__icons {
+      display: flex;
+      gap: 2em;
+    }
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+
+  &__left {
+    flex: 0 0 35%;
+
+    &__balance {
+      background-color: #fff;
+      text-align: center;
+      padding: 0 1em;
+      height: 30%;
+      border-radius: $default-radius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      .wrapper {
+        width: 100%;
+      }
+
+      &__title {
+        margin-bottom: 1rem;
+      }
+      
+      &__price {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      &__chart {
+        width: 100%;
+        height: 10vh;
+        background-color: brown;
+      }
+    }
+
+    &__following {
+      font-size: 2rem;
+      
+      &__title {
+        line-height: 3em;
+      }
+      &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .card {
+          width: 100%;
+          // height: 20vh;
+          background-color: #fff;
+          border-radius: $default-radius;
+          padding: 1em;
+          display: flex;
+          justify-content: space-between;
+          align-items: initial;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+          &__icon {
+            width: 2.5vw;
+            height: 2.5vh;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          &__body {
+            display: flex;
+            flex-direction: column;
+            // background-color: purple;
+            width: 30%;
+
+            &__name {
+              font-size: 1.6rem;
+              letter-spacing: .9px;
+              margin-bottom: .8em;
+              color: #51516A;
+            }
+            &__price {
+              font-size: 1.4rem;
+              font-weight: 600;
+              margin-bottom: 0.5em;
+              color: #51516A;
+            }
+            &__quantity {
+              font-size: 1.2rem;
+              color: #747585;
+              font-weight: bold;
+            }
+          }
+
+          &__chart {
+            width: 12vw;
+            background-color: brown;
+          }
+        }
+      }
+    }
+  }
+  
+  &__right {
+    flex: 0 0 62%;
+    // height: 20vh;
+
+    &__chart {
+      background-color: #fff;
+      border-radius: $default-radius;
+      display: flex;
+      height: 30%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      
+      &__graph {
+        width: 40%;
+        background-color: purple;
+        border-radius: inherit;
+      }
+
+      &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 80%;
+          gap: 1em;
+
+          .item {
+            display: flex;
+            width: 45%;
+            align-items: center;
+            gap: 1em;
+          }
+        }
+      }
+    }
+    &__activities {
+      width: 100%;
+
+      .title {
+        line-height: 3em;
+        font-size: 2rem;
+      }
+      .container {
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #fff;
+        border-radius: $default-radius;
+        padding: 1.8em;
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+
+          &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            color: $primary-color;
+
+            &__left {
+              display: flex;
+              align-items: center;
+              
+              img {
+                width: 40px;
+                height: 40px;
+                margin-right: 1em;
+              }
+
+              h5 {
+                font-size: 1.5rem;
+              }
+            }
+
+            &__mid {
+              font-weight: 600;
+              font-size: 1.3rem;
+            }
+
+            &__end {
+              font-weight: 600;
+              text-align: end;
+
+              span {
+                font-size: 1.1rem;
+                color: $secondary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

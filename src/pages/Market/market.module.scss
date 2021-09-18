@@ -1,0 +1,48 @@
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$border-color: #e5ebf1;
+$border-radius: 0.8rem;
+$primary-color: #51516A;
+
+.main__table {
+  padding: 1.3em 0;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+  box-shadow: $shadow;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: $border-radius;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+thead {
+  th {
+    border-bottom: 1px solid $border-color;
+    font-size: 1.2rem;
+  }
+}
+
+tbody {
+  tr {
+    color: $primary-color;
+  }
+}
+
+td {
+  border-bottom: 1px solid $border-color;
+}
+
+td, th {
+  text-align: left;
+  // background-color: blueviolet;
+  padding: 1em;
+  font-weight: bold;
+}

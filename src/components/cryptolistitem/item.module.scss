@@ -1,0 +1,26 @@
+td#coin {
+  font-weight: bold;
+}
+
+td#price {
+  font-weight: bold;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.8rem;
+
+    img { width: 100%; }
+  }
+}
+
+.chart {
+  // background-color: burlywood;
+  display: flex;
+  justify-content: center;
+}
